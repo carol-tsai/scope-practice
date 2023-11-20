@@ -12,6 +12,12 @@ arrowRestSum(0); // => 0
 
 const arrowRestSum = (...otherNums) => {
   // Your code here
+  let sum = 0;
+  for (let index = 0; index < otherNums.length; index++) {
+    const element = otherNums[index];
+    sum += element;
+  }
+  return sum;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
